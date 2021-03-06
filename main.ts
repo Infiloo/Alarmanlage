@@ -3,7 +3,7 @@ let number = 0
 basic.forever(function () {
     reading = pins.analogReadPin(AnalogPin.P1)
     number = Math.idiv(reading, 50)
-    if (number <= 5) {
+    if (number <= 10) {
         basic.showLeds(`
             . . # . .
             . . # . .
